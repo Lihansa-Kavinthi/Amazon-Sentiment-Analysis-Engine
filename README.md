@@ -1,5 +1,7 @@
 Amazon Product Sentiment Analysis 🚀
+
 📖 Project Overview
+
 Developed during my internship at Elevvo, this project addresses the challenge of extracting meaningful consumer sentiment from large-scale, unstructured product review data. Using the UCSD Amazon Appliances dataset, I built a pipeline that classifies reviews as Positive or Negative with 92% accuracy.
 
 🔍 Technical Scope
@@ -48,3 +50,4 @@ pip install pandas scikit-learn matplotlib joblib
 Run the Notebook: Open Sentiment_Analysis.ipynb to see the live visualizations and training steps.
 
 Try Custom Input: Use the predict_sentiment() function inside the script to test your own sentences!
+
