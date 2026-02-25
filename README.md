@@ -3,6 +3,10 @@
 ## 📖 Project Overview
 Developed during my internship at **Elevvo**, this project addresses the challenge of extracting meaningful consumer sentiment from large-scale, unstructured product review data. Using the UCSD Amazon Appliances dataset, I built a pipeline that classifies reviews as **Positive** or **Negative** with **92% accuracy**.
 
+## 📊 Dataset
+Due to file size limitations, the raw dataset (`Appliances.jsonl.gz`) is hosted externally.  
+👉 **[Download the Amazon Product Dataset here](https://drive.google.com/file/d/1oU1MgjeyxcgYq_wKU83HblwYbo645pBf/view?usp=sharing)** *Note: Please ensure the file is placed in the project root directory before running the scripts.*
+
 ## 🔍 Technical Scope
 * **Big Data Handling**: Processed 50,000+ records from compressed `.jsonl.gz` files using memory-efficient Python generators.
 * **Linguistic Engineering**: Transformed raw text into a high-dimensional mathematical matrix using **TF-IDF Vectorization** (5,000 features).
@@ -62,5 +66,6 @@ pip install pandas scikit-learn matplotlib joblib
 
 ---
 *Transforming raw data into digital insights, one line of code at a time. 🚀*
+
 
 
