@@ -49,7 +49,14 @@ Clone the repository and ensure the dataset `Appliances.jsonl.gz` is located in 
 Run the following command in your terminal to install the necessary libraries:
 ```bash
 pip install pandas scikit-learn matplotlib joblib
+```
 
+### 3. Execution
 
+* **Interactive Mode**: Open `Sentiment_Analysis.ipynb` in VS Code or Jupyter Notebook. This is recommended for viewing data visualizations and step-by-step logic.
 
+* **Direct Script**: To run the full pipeline (loading, training, and evaluation) in one go, execute the following in your terminal:
+  ```bash
+  python Amazon.py
+  predict_sentiment("This product exceeded my expectations!")
 
