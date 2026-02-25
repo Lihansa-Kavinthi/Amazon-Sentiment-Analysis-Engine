@@ -19,29 +19,37 @@ The project is structured into 5 logical stages:
    lr = LogisticRegression(max_iter=1000)
    lr.fit(X_train, y_train)
    
-4. Interpretation (The "Why")
-We used model coefficients to identify the "trigger words" for sentiment.
+### 4. Interpretation (The "Why")
+We analyzed the model coefficients to identify the "trigger words" that carry the most weight in determining sentiment.
+* **Top Positive Words**: *efficient, easy, perfect, highly, great*
+* **Top Negative Words**: *disappointed, return, waste, defective, terrible*
 
-Top Positive: efficient, easy, perfect, highly
+### 5. Deployment Logic
+The model and vectorizer are serialized into `.pkl` files using `joblib`. This allows for **instant loading and inference** in production environments without the need to retrain on the 50,000-row dataset every time.
 
-Top Negative: disappointed, return, waste, defective
+---
 
-5. Deployment Logic
-The model is serialized into .pkl files for instant loading and inference.
+## 📊 Performance Results
 
-📊 Performance Results
-Model,Accuracy,Precision (Neg),Recall (Pos)
-Logistic Regression,92%,0.84,0.99
-Naive Bayes,90%,0.81,0.97
+| Model | Accuracy | Precision (Neg) | Recall (Pos) |
+| :--- | :--- | :--- | :--- |
+| **Logistic Regression** | **92%** | 0.84 | 0.99 |
+| **Naive Bayes** | **90%** | 0.81 | 0.97 |
 
-🛠️ How to Run
-Clone the repo and ensure you have the Appliances.jsonl.gz file in the directory.
 
-Install Dependencies:
+
+---
+
+## 🛠️ How to Run
+
+### 1. Prerequisites
+Clone the repository and ensure the dataset `Appliances.jsonl.gz` is located in the project root directory.
+
+### 2. Install Dependencies
+Run the following command in your terminal to install the necessary libraries:
+```bash
 pip install pandas scikit-learn matplotlib joblib
 
-Run the Notebook: Open Sentiment_Analysis.ipynb to see the live visualizations and training steps.
 
-Try Custom Input: Use the predict_sentiment() function inside the script to test your own sentences!
 
 
