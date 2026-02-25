@@ -60,3 +60,7 @@ pip install pandas scikit-learn matplotlib joblib
   python Amazon.py
   predict_sentiment("This product exceeded my expectations!")
 
+---
+*Transforming raw data into digital insights, one line of code at a time. 🚀*
+
+
